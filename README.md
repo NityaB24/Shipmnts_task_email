@@ -1,4 +1,10 @@
-Test the API Endpoints:
+# Project Name
+# Designing an Automated Email Scheduling API
+
+[Hosted link](https://shipmnts-task-email.onrender.com)
+
+## List of APIs created:
+
 1. POST /schedule-email:
 Method: POST
 URL: http://localhost:5000/api/emails/schedule-email
