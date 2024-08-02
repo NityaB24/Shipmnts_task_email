@@ -5,9 +5,52 @@
 
 ## List of APIs created:
 
+
+## Pre-requisites
+
+- Install [Node.js](https://nodejs.org/en/) latest version.
+
+## Getting started
+
+- Clone the repository
+
+```
+git clone  https://github.com/NityaB24/Shipmnts_task_email.git
+```
+
+- Install dependencies
+
+```
+cd <project_name>
+npm install
+```
+
+#### Create .env file at root directory of this project
+
+```
+# Environment vars
+
+This project uses the following environment variables:
+
+| Name       | Description                     | Default Value |
+| ---------- | ------------------------------- | ------------- |
+| PORT       | Enter PORT No.                  | 8000          |
+| MONGO_URI  | Enter your MongoDB Database URL |               |
+| JWT_SECRET | Enter your own JWT SECRET Key   |               |
+
+```
+
+- Build and run the project
+
+```
+npm run dev
+```
+
+#### Navigate to `http://localhost:8000`
+
 1. POST /schedule-email:
 Method: POST
-URL: http://localhost:5000/api/emails/schedule-email
+URL: http://localhost:8000/api/emails/schedule-email
 Headers:
 Key: Content-Type
 Value: application/json
@@ -27,17 +70,17 @@ Send Request: Click the "Send" button.
 Check Response: Ensure you receive a response with the scheduled email details.
 2. GET /scheduled-emails:
 Method: GET
-URL: http://localhost:5000/api/emails/scheduled-emails
+URL: http://localhost:8000/api/emails/scheduled-emails
 Send Request: Click the "Send" button.
 Check Response: Ensure you receive a list of all scheduled emails.
 3. GET /scheduled-emails/{id}:
 Method: GET
-URL: http://localhost:5000/api/emails/scheduled-emails/{id} (replace {id} with an actual email ID from your database)
+URL: http://localhost:8000/api/emails/scheduled-emails/{id} (replace {id} with an actual email ID from your database)
 Send Request: Click the "Send" button.
 Check Response: Ensure you receive the details of the specific scheduled email.
 4. DELETE /scheduled-emails/{id}:
 Method: DELETE
-URL: http://localhost:5000/api/emails/scheduled-emails/{id} (replace {id} with an actual email ID from your database)
+URL: http://localhost:8000/api/emails/scheduled-emails/{id} (replace {id} with an actual email ID from your database)
 Send Request: Click the "Send" button.
 Check Response: Ensure the email is canceled and you receive a confirmation message.
 Example Request and Response Screenshots
