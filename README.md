@@ -43,10 +43,41 @@ This project uses the following environment variables:
 - Build and run the project
 
 ```
-npm start
+npm run dev
 ```
 
 #### Navigate to `http://localhost:8000`
+
+
+## Project Structure
+
+The folder structure of this app is explained below:
+
+| Name              | Description                                                                |
+| ----------------- | -------------------------------------------------------------------------- |
+| **config**        | Contains the configuration files for database connection  |
+| **controllers**   | Contains the functions to handle various express routes.                   |
+| **middlewares**   | Contains middleware functions to handle request processing.                |
+| **models**        | Defines the data schema and interacts with the models.                   |
+| **routes**        | Defines the application's routing logic.                                   |
+| .env              | Contains environment variables for the app.                                |
+| .gitignore        | Specifies which files and directories to ignore in git.                    |
+| app.js          | Entry point to the express app.                                            |
+| package-lock.json | Contains the exact versions of npm dependencies installed.                 |
+| package.json      | Contains project metadata and npm dependencies, and defines build scripts. |
+
+## Api Endpoints
+Request:
+POST /schedule-email Request:
+
+Request:
+GET /scheduled-emails Request:
+
+Request:
+GET /scheduled-emails/{id} Request:
+
+Request:
+DELETE /scheduled-emails/{id} Request:
 
 1. POST /schedule-email:
 Method: POST
@@ -68,16 +99,19 @@ Copy code
 }
 Send Request: Click the "Send" button.
 Check Response: Ensure you receive a response with the scheduled email details.
+
 2. GET /scheduled-emails:
 Method: GET
 URL: http://localhost:8000/api/emails/scheduled-emails
 Send Request: Click the "Send" button.
 Check Response: Ensure you receive a list of all scheduled emails.
+
 3. GET /scheduled-emails/{id}:
 Method: GET
 URL: http://localhost:8000/api/emails/scheduled-emails/{id} (replace {id} with an actual email ID from your database)
 Send Request: Click the "Send" button.
 Check Response: Ensure you receive the details of the specific scheduled email.
+
 4. DELETE /scheduled-emails/{id}:
 Method: DELETE
 URL: http://localhost:8000/api/emails/scheduled-emails/{id} (replace {id} with an actual email ID from your database)
