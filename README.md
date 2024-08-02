@@ -43,7 +43,7 @@ This project uses the following environment variables:
 - Build and run the project
 
 ```
-npm run dev
+npm start
 ```
 
 #### Navigate to `http://localhost:8000`
